@@ -1,5 +1,5 @@
 import React from "react";
-import { View,Text, TextInput, Button } from "react-native";
+import { View,Text, TextInput, Button, StyleSheet } from "react-native";
 import { useState } from "react";
 
 function LogIn(){
@@ -17,8 +17,8 @@ function LogIn(){
     }
 
     return(
-        <View>
-            <Text>Sign Up</Text>
+        <View style = {styles.container} >
+            <Text>Log In</Text>
             <View>
                 {error ? <Text>{error}</Text> : null }
                 <Text>Username:</Text>
@@ -34,3 +34,11 @@ function LogIn(){
     )
 }
 export default LogIn;
+
+const styles = StyleSheet.create({
+    container:{
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+    }
+})
