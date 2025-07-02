@@ -9,9 +9,12 @@
     }
   },
   "include": [
-    "**/*.ts",
-    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    ".expo/types/**/*.js",
+    "expo-env.d.js",
+    "app.jsx",
     ".expo/types/**/*.ts",
     "expo-env.d.ts"
-, "app/+not-found.jsx", "app/(tabs)/index.jsx"  ]
+  ]
 }

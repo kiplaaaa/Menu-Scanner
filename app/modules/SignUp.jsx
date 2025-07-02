@@ -37,3 +37,4 @@ function SignUp(){
         </View>
     )
 }
+export default SignUp;
